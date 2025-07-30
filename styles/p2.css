@@ -1,0 +1,33 @@
+.box::before {
+  content: "";
+  display: block;
+  height: 200px;
+  background-color: rebeccapurple;
+  border: 1px solid black;
+}
+.header-ad {
+  line-height: 150px;
+  background-color: lightgray;
+  padding: 10px 0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+}
+
+.story1 {
+  background-color: lightblue;
+  padding: 20px;
+  margin-left: 300px;
+  margin-right: 600px;
+}
+
+.story1{
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  -ms-transform: scaleY(1.1);
+  -webkit-transform: scaleY(1.1);
+  transform: scaleY(1.1);
+  font-weight: 400;
+  color: black;
+}
