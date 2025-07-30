@@ -1,10 +1,5 @@
-.box::before {
-  content: "";
-  display: block;
-  height: 200px;
-  background-color: rebeccapurple;
-  border: 1px solid black;
-}
+
+
 .header-ad {
   line-height: 150px;
   background-color: lightgray;
