@@ -30,6 +30,12 @@
 
 @media (max-width: 1025px) {
     .content{
+       margin-left: 1000px;
+    }
+}
+
+@media (max-width: 1281px) {
+    .content{
        margin-left: 100px;
     }
 }
