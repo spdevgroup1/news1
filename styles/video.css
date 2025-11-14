@@ -67,10 +67,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
+/*I have changed grid-template-columns to 1fr 1fr 1fr from 1fr 1fr 1fr 1fr */
 @media (min-width: 1000px) {
   .video-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
