@@ -14,52 +14,137 @@
   </head>
   
   <style>
-div.mycontainer {
-  width:60%;
-  padding-left:40%;
-  overflow:auto;
-}
-div.mycontainer div {
-  color: black;
-  height:150px;
-  width:15%;  
-  float:left;
+
+
+.front-page-header {
+    margin:auto;
+    width:100%;  
+    padding:10px;
+    background-color: limegreen;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.story-summary {
-      font-size: large;
+.container-frontpage-main-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.container-frontpage-gallery-of-summaries {
+    display: flex;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 10px;
+    align-items: left;
+    width: 100%;
+    justify-content: center;
+    height: 140px;
+}
+
+
+.container-frontpage-gallery-of-summaries div  {
+    font-family: 'Arial', sans-serif;
+    font-size: 11.0pt;
+    font-weight: 100;
+    color: rgb(77, 77, 77); 
+}
+
+
+/*Individual Summary Container*/
+.Item1 {
+    display: flex;
+    align-items: left;
+    justify-content: top;
+    grid-template-columns: 1fr 1.5fr;
+    width:100%
+}
+
+.story-header {
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width:100%;
+    height: 15%;
+    color:black;
+    padding:0%;
+    margin-left: 0%;     
+    }
     
-    
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
 </style>
+
 <body>
 
-<div class="mycontainer">
+<!--Front Page Header--> 
+    <div class="front-page-header">
+    News Front Page
+        </div>
 
-  <div>
-    <h2>London</h2>
-    <img src="/summary-pictures/sumpix01.png" alt="sumpix01-folder" width="200" height:"100">
-    <story-summary>Some Aussies were furious a household product, which can be abused by drug users, was listed for sale, “putting lives at risk.”
-    </story-summary>
-  </div>
-  
-  
-  <div>
-    <h2>Oslo</h2>
-    <story-summary>Australia’s economy is on a hamster wheel to nowhere with billions of dollars being printed as prices skyrocket, an outspoken tech exec has warned.
-    </story-summary>
-  </div>
-  
-  
-  <div>
-    <h2>Rome</h2>
-    <story-summary>
-      Australia’s economy is on a hamster wheel to nowhere with billions of dollars being printed as prices skyrocket, an outspoken tech exec has warned.
-    </story-summary>
-  </div>
+<!--Container Outer -Front Page-->
+<div class="container-frontpage-main-outer">
+    
+    <!--Container Front Page - Gallery of Summaries-->
+    <div class="container-frontpage-gallery-of-summaries">
+       
+       <!--Container of Summaries-->
+        <div class="Item1">
 
-  
+        <!--LEFT-->
+
+            <!--Header--ROW 1--COL 1-->
+            <div class="story-header">
+                <p>Left Story Header Here</p>
+            </div>
+
+            <!--Image--ROW 2--COL 2-->
+            <div class="image">
+                <img src="/images/sumpix01.png" height="110" width="159">
+            </div>
+
+            <!--Summary Text--ROW 2 COL 2-->
+            <div class="text">
+                <p>Douglas and Peter Morgan were so clinical at robbing banks that cops were convinced they were one man. Here’s how they carried out 24 heists.</p>
+            </div>
+
+        <!--RIGHT-->
+
+            <!--Header--ROW 1--COL 1-->
+            <div class="story-header">
+                <p>Right Story Header Here</p>
+            </div>
+
+            <!--Image--ROW 2--COL 2-->
+            <div class="image">
+                <img src="sumpix01.png" height="110" width="159">
+            </div>
+
+            <!--Summary Text--ROW 2 COL 2-->
+            <div class="text">
+                <p>Douglas and Peter Morgan were so clinical at robbing banks that cops were convinced they were one man. Here’s how they carried out 24 heists.</p>
+            </div>        
+    </div>
+    
+
+    </div>
 </div>
-
 </body>
-</html>
