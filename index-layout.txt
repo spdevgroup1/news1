@@ -17,7 +17,7 @@
 <body>
     ----MASTER CONTAINER FOR WHOLE PAGE----
 
-    <div class="master-container">
+    master-container
 
     ----MASTER CONTAINER FOR MAIN STORY----
 
