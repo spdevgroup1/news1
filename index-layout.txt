@@ -1,0 +1,54 @@
+<style>
+    .master-container 
+    .page-container-top 
+    .front-page-main-story-container 
+    .container-main-top-image-and-text 
+
+    .page-container2-summaries 
+    .main-story-header 
+    .main-story-text
+    .story-summaries-container 
+    .story-header 
+    .container-image-and-text 
+.text
+.line 
+</style>
+
+<body>
+    ----MASTER CONTAINER FOR WHOLE PAGE----
+
+    <div class="master-container">
+
+    ----MASTER CONTAINER FOR MAIN STORY----
+
+    page-container-top
+        front-page-main-story-container
+            main-story-header
+                container-main-top-image-and-text
+                    mainimage
+                    main-story-text  
+        
+    ----MASTER CONTAINER FOR GALLERY of SUMMARIES----
+
+    <div class="page-container-summaries">
+
+  
+    <!--ONE-->
+    story-summaries-container
+        story-header
+            container-image-and-text
+                image
+                text
+                line
+   
+    <!--TWO-->
+    story-summaries-container
+        story-header
+            container-image-and-text
+                image
+                text
+                line
+           
+    <!--END MASTER CONTAINER-->
+
+    
