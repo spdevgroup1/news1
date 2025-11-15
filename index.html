@@ -13,138 +13,90 @@
     <link rel="stylesheet" href="styles/sidebar.css">
   </head>
   
-  <style>
+ <style>
 
+    .page-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width:50%;
+        margin-left:0%;
+        margin-right:0%;
+    }
 
-.front-page-header {
-    margin:auto;
-    width:100%;  
-    padding:10px;
-    background-color: limegreen;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container-frontpage-main-outer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    width: 50%;
-    margin-left: 20%;
-    margin-right: 0%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.container-frontpage-gallery-of-summaries {
-    display: flex;
-    grid-template-columns: 1fr 1.5fr;
-    column-gap: 10px;
-    align-items: left;
-    width: 100%;
-    justify-content: center;
-    height: 140px;
-}
-
-
-.container-frontpage-gallery-of-summaries div  {
-    font-family: 'Arial', sans-serif;
-    font-size: 11.0pt;
-    font-weight: 100;
-    color: rgb(77, 77, 77); 
-}
-
-
-/*Individual Summary Container*/
-.Item1 {
-    display: flex;
-    align-items: left;
-    justify-content: top;
-    grid-template-columns: 1fr 1.5fr;
-    width:100%
-}
-
-.story-header {
-    font-size: larger;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    width:100%;
-    height: 15%;
-    color:black;
-    padding:0%;
-    margin-left: 0%;     
+    .story-container {
+        width:100%;
+        margin-left:0%;
     }
     
-.image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .story-header {
+        font-size: larger;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        width:100%;
+        height: 15%;
+        color:black;
+        padding:0%;
+        margin-left: 0%;
+    }
 
-hr {
-    width: 100%;
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
+    .container-image-and-text {
+        
+        display: flex;
+        gap: 2.5%;
+        margin-left: 0%;
+        margin-top: 0%;
+        align-items: left;
+        justify-content: top;
+        
+        text-align: left;
+        height:150px;
+    }
+
+.text{
+    padding-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 11pt;
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    color: rgb(77, 77, 77);
+    }
+
+
+
+  .line {
+    width:90%;
+    height:3px;
+    border-bottom: 2px solid rgb(210, 207, 207);
+  }
 
 </style>
 
 <body>
 
-<!--Front Page Header--> 
-    <div class="front-page-header">
-    News Front Page
+<div class="page-container">
+    <!--LEFT-->
+    <div class="story-container">
+        <div class="story-header">
+            <p>Big building sells great price.</p>
         </div>
-
-<!--Container Outer -Front Page-->
-<div class="container-frontpage-main-outer">
+            <div class="container-image-and-text">
+                <img src="/images/sumpix01.png" alt="Image 1"  width="150" height="110">
+                <div class="text">This text is arranged next to the images using Grid Layout. The story doesn't stop here. Read on for more Grid info</div>
+            </div>
+            <div class="line"></div>
+        </div>
     
-    <!--Container Front Page - Gallery of Summaries-->
-    <div class="container-frontpage-gallery-of-summaries">
-       
-       <!--Container of Summaries-->
-        <div class="Item1">
-
-        <!--LEFT-->
-
-            <!--Header--ROW 1--COL 1-->
-            <div class="story-header">
-                <p>Left Story Header Here</p>
+    <!--RIGHT-->
+    <div class="story-container">
+        <div class="story-header">
+            <p>Big building sells great price.</p>
+        </div>
+            <div class="container-image-and-text">
+                <img src="/images/sumpix01.png" alt="Image 1"  width="150" height="110">
+                <div class="text">This text is arranged next to the images using Grid Layout. The story doesn't stop here. Read on for more Grid info</div>
             </div>
-
-            <!--Image--ROW 2--COL 2-->
-            <div class="image">
-                <img src="front-page-images/sumpix01.png" height="110" width="159">
-            </div>
-
-            <!--Summary Text--ROW 2 COL 2-->
-            <div class="text">
-                <p>Douglas and Peter Morgan were so clinical at robbing banks that cops were convinced they were one man. Here’s how they carried out 24 heists.</p>
-            </div>
-
-        <!--RIGHT-->
-
-            <!--Header--ROW 1--COL 1-->
-            <div class="story-header">
-                <p>Right Story Header Here</p>
-            </div>
-
-            <!--Image--ROW 2--COL 2-->
-            <div class="image">
-                <img src="front-page-images/sumpix01.png" height="110" width="159">
-            </div>
-
-            <!--Summary Text--ROW 2 COL 2-->
-            <div class="text">
-                <p>Douglas and Peter Morgan were so clinical at robbing banks that cops were convinced they were one man. Here’s how they carried out 24 heists.</p>
-            </div>        
-    </div>
-    
-
-    </div>
+            <div class="line"></div>
+        </div>  
 </div>
 </body>
