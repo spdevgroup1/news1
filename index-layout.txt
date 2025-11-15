@@ -1,5 +1,6 @@
 <style>
-    .master-container 
+    .master-container (100%)
+
     .page-container-top 
     .front-page-main-story-container 
     .container-main-top-image-and-text 
@@ -10,14 +11,16 @@
     .story-summaries-container 
     .story-header 
     .container-image-and-text 
-.text
-.line 
+
+    .text
+    .line
+
 </style>
 
 <body>
     ----MASTER CONTAINER FOR WHOLE PAGE----
 
-    master-container
+    master-container (100%)
 
     ----MASTER CONTAINER FOR MAIN STORY----
 
