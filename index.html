@@ -27,13 +27,20 @@
   top: 0;
   padding: 2rem;
   text-align: center;
-  background: #1abc9c;
+  background: #1d1abc;
   color: white;
 }
     /*Hide Horizontal Scroll Bar*/
 /*body {
     overflow: hidden;
 }*/
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar, .page-container-summaries {   
+    flex-direction: column;
+  }
+}
 
     /*MASTER CONTAINER FOR FRONT PAGE*/
     .master-container {
@@ -155,8 +162,7 @@
 
     <!-- Header -->
 <div class="header">
-  <h1>My Website</h1>
-  <p>With a <b>flexible</b> layout.</p>
+  <h1>News</h1>
 </div>
 
     <!--MASTER CONTAINER-->
