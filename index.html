@@ -14,6 +14,32 @@
   </head>
   
  <style>
+    .page-container-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        width:50%;
+        margin-left:0%;
+        margin-right:0%;
+    }
+    .front-page-main-story-container {
+        width:100%;
+        margin-left:0%;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .container-main-top-image-and-text {
+        
+        display: flex;
+        gap: 2.5%;
+        margin-left: 0%;
+        margin-top: 0%;
+        align-items: left;
+        justify-content: top;
+        
+        text-align: left;
+        height:135px;
+    }
 
     .page-container {
         display: grid;
@@ -21,14 +47,6 @@
         width:50%;
         margin-left:0%;
         margin-right:0%;
-    }
-
-
-    .front-page-main-story-container {
-        width:100%;
-        margin-left:0%;
-        height: 200px;
-        margin-top: 20px;
     }
 
     .main-story-header {
@@ -41,6 +59,16 @@
         padding:0%;
         margin-left: 0%;
         margin-top: 20px;
+    }
+
+    .main-story-text{
+        padding-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 12pt;
+        font-family: 'Arial', sans-serif;
+        font-weight: 100;
+        color: rgb(77, 77, 77);
     }
 
     .story-summaries-container {
@@ -97,15 +125,25 @@
 
 <body>
     
-<div class="page-container">
 
-    <!--FRONT PAGE MAIN STORY-->
-    <div class="front-page-main-story-container">
+<!--FRONT PAGE MAIN STORY-->
+    <div class="page-container-top">
+        <div class="front-page-main-story-container">
         <div class="main-story-header">
-            <p>Main Headline</p>
+            <p>Erika Eleniak looks totally different</p>
+        </div>
+        <div class="container-main-top-image-and-text">
+            <img src="front-page-images/mainpix01.png" alt="Image 1"  width="300" height="135">
+            <div class="main-story-text">“Baywatch” alum Erika Eleniak looks totally different in her edgy new film role decades after playing a bombshell lifeguard on the hit show.
+Eleniak, 56 — who played Shauni McClain in the first three seasons of the ’90s surf series — flaunted her sleeves of impressive ink via Instagram in a photo from her upcoming film Alchemy In Venice.
+        </div>
         </div>
     </div>    
         <!-- Main story content goes here -->
+
+<div class="page-container">
+
+    
     <!--ROW 1  -->
     <!--LEFT-->
     <!--ONE-->
