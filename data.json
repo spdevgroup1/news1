@@ -1,1 +1,16 @@
+[
+    {
+        "userId":1,
+        "id":1,
+        "title":"Sunt ema titlee lineas",
+        "body":"Ya ya yan"
+    },
 
+    {
+        "userId":1,
+        "id":2,
+        "title":"Sunt ema titlee lineas",
+        "body":"Ya ya yan"
+    }
+
+]
