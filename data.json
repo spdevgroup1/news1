@@ -1,16 +1,12 @@
 [
-    {
-        "userId":1,
-        "id":1,
-        "title":"Sunt ema titlee lineas",
-        "body":"Ya ya yan"
-    },
-
-    {
-        "userId":1,
-        "id":2,
-        "title":"Sunt ema titlee lineas",
-        "body":"Ya ya yan"
-    }
-
+  {
+    "id": 1,
+    "name": "Alice",
+    "age": 25
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "age": 30
+  }
 ]
